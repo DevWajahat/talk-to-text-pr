@@ -1,5 +1,4 @@
 import streamlit as st
-import torch
 from transformers import WhisperProcessor, WhisperForConditionalGeneration
 import os
 import wave
@@ -705,6 +704,7 @@ elif st.session_state.page == "app" and st.session_state.user_id:
     #             st.rerun()
 
     #     st.markdown('</div>', unsafe_allow_html=True)
+
 
 
 st.markdown("Powered by Streamlit and open-source models from Hugging Face and Gemini.")
